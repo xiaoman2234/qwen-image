@@ -1,0 +1,25 @@
+{
+  "name": "dsh-qwen-image",
+  "version": "0.1.0",
+  "description": "DSH plugin: generate/edit images with Alibaba Bailian Qwen-Image. Slash commands: /qwen_image, /img. Tool: qwen_image.",
+  "type": "module",
+  "main": "index.js",
+  "keywords": ["dsh", "dsh-plugin", "qwen-image", "bailian", "image-generation", "deepseek-harness"],
+  "license": "MIT",
+  "files": ["index.js", "cordis.patch.yml", "qwen-image-cli.mjs", "README.md", "README.en.md", "LICENSE"],
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "engines": { "node": ">=20" },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/dsh-commands": "*"
+  }
+}

@@ -1,0 +1,6 @@
+# Optional overlay for local development without bundling:
+#   dsh web --patch ./cordis.yml
+# Replace the absolute path below with your checkout location.
+- insert:
+    - id: qwen-image
+      name: './index.js'
