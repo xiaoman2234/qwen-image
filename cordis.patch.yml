@@ -1,0 +1,4 @@
+# dsh-qwen-image bundle patch
+- insert:
+    - id: qwen-image
+      name: dsh-qwen-image
